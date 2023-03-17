@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>CSS Technical Documentation</title>
+</head>
+<body>
+
+    <nav id="navbar">
+        <header>
+          <h1>CSS Documentation</h1>
+        </header>
+        <ul>
+          <li><a class="nav-link" href="#Selectors">Selectors</a></li>
+          <li><a class="nav-link" href="#Properties">Properties</a></li>
+          <li><a class="nav-link" href="#Values">Values</a></li>
+          <li><a class="nav-link" href="#Box_Model">Box Model</a></li>
+          <li><a class="nav-link" href="#Layouts">Layouts</a></li>
+        </ul>
+    </nav>
+      <main id="main-doc">
+        <section class="main-section" id="Selectors">
+          <header>Selectors</header>
+          <p>A selector is a pattern that matches one or more elements in a document. Selectors are used to apply styles to elements based on their name, id, class, attributes, and position in the HTML document tree.</p>
+          <p>Here are some commonly used selectors:</p>
+          <ul>
+            <li>Type Selector</li>
+            <li>Class Selector</li>
+            <li>ID Selector</li>
+            <li>Attribute Selector</li>
+            <li>Descendant Selector</li>
+          </ul>
+          <p>Here's an example:</p>
+          <pre><code>
+          p {
+            color: red;
+          }
+          </code></pre>
+        </section>
+        <section class="main-section" id="Properties">
+          <header>Properties</header>
+          <p>A property is a set of values assigned to an element. Properties are used to control the presentation and behavior of an element.</p>
+          <p>Here are some commonly used properties:</p>
+          <ul>
+            <li>Background-color</li>
+            <li>Color</li>
+            <li>Font-family</li>
+            <li>Width</li>
+            <li>Height</li>
+          </ul>
+          <p>Here's an example:</p>
+          <pre><code>
+          p {
+            color: red;
+            font-size: 16px;
+          }
+          </code></pre>
+        </section>
+        <section class="main-section" id="Values">
+          <header>Values</header>
+          <p>A value is a single piece of data that can be assigned to a property. Values are used to define the appearance and behavior of an element.</p>
+          <p>Here are some commonly used values:</p>
+          <ul>
+            <li>Color values</li>
+            <li>Length values</li>
+            <li>Percentage values</li>
+            <li>Keyword values</li>
+            <li>Unitless values</li>
+          </ul>
+          <p>Here's an example:</p>
+          <pre><code>
+          p {
+            color: red;
+            font-size: 16px;
+            width: 50%;
+          }
+          </code></pre>
+        </section>
+        <section class="main-section" id="Box_Model">
+            <header>Box Model</header>
+            <p>The box model refers to the way elements are displayed on a web page as rectangular boxes, and how each box's content, padding, border, and margin are defined.</p>
+            <p>The box model consists of four parts:</p>
+            <ul>
+              <li>Content: The actual content of the box, which can be text, an image, or other HTML elements.</li>
+              <li>Padding: The space between the content and the border.</li>
+              <li>Border: The border surrounding the content and padding.</li>
+              <li>Margin: The space outside the border, between the border and other elements on the page.</li>
+            </ul>
+            <p>Here's an example of how the box model works:</p>
+            <pre><code>
+            .example {
+              width: 200px;
+              height: 100px;
+              padding: 20px;
+              border: 2px solid black;
+              margin: 10px;
+            }
+            </code></pre>
+            <p>In the example above, the box has a width of 200 pixels and a height of 100 pixels. It also has 20 pixels of padding on all sides, a 2-pixel border that is solid and black, and a margin of 10 pixels on all sides. The total size of the box, including its content, padding, border, and margin, is 244 pixels wide and 144 pixels tall.</p>
+          </section>
+          <section class="main-section" id="Layouts">
+            <header>Layouts</header>
+            <p>In web design, layouts are used to arrange elements on a web page. Layouts can be created using CSS, and are used to define the structure and flow of a page's content.</p>
+            <p>Here are some commonly used layout techniques:</p>
+            <ul>
+              <li>Floats</li>
+              <li>Flexbox</li>
+              <li>Grid</li>
+              <li>Positioning</li>
+            </ul>
+            <p>Each of these techniques has its own strengths and weaknesses, and can be used to create a variety of different layouts.</p>
+            <p>Here's an example of a simple layout using flexbox:</p>
+            <div class="layout-example">
+              <div class="box red"></div>
+              <div class="box green"></div>
+              <div class="box blue"></div>
+            </div>
+            <pre><code>
+            .layout-example {
+              display: flex;
+              justify-content: space-between;
+            }
+          .box {
+          height: 100px;
+          width: 100px;
+          }
+          
+          .red {
+          background-color: red;
+          }
+          
+          .green {
+          background-color: green;
+          }
+          
+          .blue {
+          background-color: blue;
+          }
+          </code></pre>
+          
+          </section>
+        </main>
+    
+</body>
+</html>
